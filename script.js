@@ -46,9 +46,14 @@ class Coder extends Person {
 
 let coder = new Coder("Janny", 2, "Jamaica", [
   "eating",
-  "travelling",
+  "traveling",
   "skating"
 ]);
 
 console.log(coder);
 coder.greeting();
+coder.addHobby("gardening");
+coder.addHobby("shopping");
+console.log(coder);
+coder.removeHobby("traveling");
+console.log(coder);
