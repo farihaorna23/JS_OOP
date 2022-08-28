@@ -19,8 +19,36 @@ class Person {
   }
 }
 
-let person = new Person("Jane", 0, "Queens", ["reading", "swiming", "running"]);
+let person = new Person("Jane", 0, "Queens", [
+  "reading",
+  "diy",
+  "jumping",
+  "swiming",
+  "running"
+]);
 
 person.addHobby("cycling");
-person.removeHobby("reading");
+person.removeHobby("cycling");
 console.log(person);
+
+//exercise 2
+class Coder extends Person {
+  constructor(name, pets, residence, hobbies) {
+    super(name, pets, residence, hobbies);
+
+    this.occupation = "Full Stack Web Developer";
+  }
+
+  greeting() {
+    console.log(`Hello this another object!`);
+  }
+}
+
+let coder = new Coder("Janny", 2, "Jamaica", [
+  "eating",
+  "travelling",
+  "skating"
+]);
+
+console.log(coder);
+coder.greeting();
