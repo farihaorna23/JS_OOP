@@ -19,18 +19,6 @@ class Person {
   }
 }
 
-let person = new Person("Jane", 0, "Queens", [
-  "reading",
-  "diy",
-  "jumping",
-  "swiming",
-  "running"
-]);
-
-person.addHobby("cycling");
-person.removeHobby("cycling");
-console.log(person);
-
 //exercise 2
 class Coder extends Person {
   constructor(name, pets, residence, hobbies) {
@@ -49,6 +37,19 @@ let coder = new Coder("Janny", 2, "Jamaica", [
   "traveling",
   "skating"
 ]);
+//exercise 3
+
+let person = new Person("Jane", 0, "Queens", [
+  "reading",
+  "diy",
+  "jumping",
+  "swiming",
+  "running"
+]);
+
+person.addHobby("cycling");
+person.removeHobby("cycling");
+console.log(person);
 
 console.log(coder);
 coder.greeting();
