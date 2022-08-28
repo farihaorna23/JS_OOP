@@ -32,11 +32,6 @@ class Coder extends Person {
   }
 }
 
-let coder = new Coder("Janny", 2, "Jamaica", [
-  "eating",
-  "traveling",
-  "skating"
-]);
 //exercise 3
 
 let person = new Person("Jane", 0, "Queens", [
@@ -45,6 +40,12 @@ let person = new Person("Jane", 0, "Queens", [
   "jumping",
   "swiming",
   "running"
+]);
+
+let coder = new Coder("Janny", 2, "Jamaica", [
+  "eating",
+  "traveling",
+  "skating"
 ]);
 
 person.addHobby("cycling");
@@ -58,3 +59,39 @@ coder.addHobby("shopping");
 console.log(coder);
 coder.removeHobby("traveling");
 console.log(coder);
+
+//exercise4
+
+class Calculator {
+  constructor() {
+    this.result = 0;
+  }
+
+  add(num1, num2) {
+    return (this.result = num1 + num2);
+  }
+
+  subtract(num1, num2) {
+    return (this.result = num1 - num2);
+  }
+
+  mutiply(num1, num2) {
+    return (this.result = num1 * num2);
+  }
+
+  divide(num1, num2) {
+    return (this.result = num1 / num2);
+  }
+
+  displayResult() {
+    console.log(this.result);
+  }
+}
+
+let cal = new Calculator();
+console.log(cal.add(2, 3));
+console.log(cal.subtract(6, 2));
+console.log(cal.mutiply(4, 4));
+console.log(cal.divide(8, 2));
+
+console.log(cal.add(3));
